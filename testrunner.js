@@ -1,3 +1,6 @@
+/*
+ * Test runner
+ */
 try {
     var reporter = require('nodeunit').reporters.default;
 }
@@ -12,4 +15,5 @@ reporter.run([
                 './tests/zerorTest.js',
                 './tests/ConfusionMatrixTest.js',
                 './tests/utils/math/DistancesTest.js'
+    
             ]);
