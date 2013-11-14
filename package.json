@@ -1,0 +1,20 @@
+{
+  "name": "MachineLearning",
+  "version": "0.1.0",
+  "description": "Algorithms for machine learning",
+  "main": "main.js",
+  "directories": {
+    "test": "tests"
+  },
+  "dependencies": {
+    
+  },
+  "devDependencies": {
+      "nodeunit": "~0.8.2"
+  },
+  "scripts": {
+    "test": "node testrunner.js"
+  },
+  "author": "Andrés Lozada Mosto",
+  "license": "MIT"
+}
