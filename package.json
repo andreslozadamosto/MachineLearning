@@ -6,11 +6,12 @@
   "directories": {
     "test": "tests"
   },
-  "dependencies": {
-    
-  },
+  "dependencies": {},
   "devDependencies": {
-      "nodeunit": "~0.8.2"
+    "chai": "^2.2.0",
+    "grunt": "^0.4.5",
+    "mocha": "^2.2.1",
+    "nodeunit": "~0.8.2"
   },
   "scripts": {
     "test": "node testrunner.js"
