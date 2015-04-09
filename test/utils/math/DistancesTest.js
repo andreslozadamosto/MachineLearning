@@ -8,7 +8,7 @@ var assert = require("assert"),
 
 describe('Distances', function() {
     describe('#Euclidea()', function() {
-        it('Va;il', function() {
+        it('Valid', function() {
             var pointFrom = new Point();
             mock.mock(pointFrom, 'dims', function() {
                 return [2, 7];
