@@ -15,10 +15,21 @@ module.exports = function(grunt) {
           ,ui:"tdd"
         },
         src: ['test/**/*.js']
+      },
+      nuevo:{
+        options: {
+          reporter: 'spec',
+          captureFile: 'results.txt', // Optionally capture the reporter output to a file 
+          quiet: false, // Optionally suppress output to standard out (defaults to false) 
+          clearRequireCache: false // Optionally clear the require cache before running tests (defaults to false) 
+          ,ui:"tdd"
+        },
+        src: ['utest/**/*.js']
       }
     }
   });
  
   grunt.registerTask('default', 'mochaTest');
+  grunt.registerTask('test', 'mochaTest:nuevo');
  
 };

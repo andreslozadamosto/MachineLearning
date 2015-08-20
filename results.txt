@@ -1,60 +1,45 @@
 
 [0m[0m
-[0m  ValidationUtils[0m
-[0m    #isValid()[0m
-[2K[0G    [32m  ✓[0m[90m should return true for all native values types except null, undefined or NaN [0m
-[2K[0G    [32m  ✓[0m[90m should return false for null or undefened [0m
-[2K[0G    [32m  ✓[0m[90m should return false for varibles without initialization [0m
-[0m    #isEmptyOrNull()[0m
-[2K[0G    [32m  ✓[0m[90m should be true for null or undefined values [0m
-[2K[0G    [32m  ✓[0m[90m should be false for any other value than null and undefined [0m
-[0m    #isTypeOf()[0m
-[2K[0G    [32m  ✓[0m[90m should be true for native types [0m
-[2K[0G    [32m  ✓[0m[90m Should be true for custom classes and inherit classes hierarchy [0m
+[0m  OneRule Test[0m
+[2K[0G  [32m  ✓[0m[90m Existe clasificador [0m
+[0m    Aprender y predecir simple[0m
+rule: rainy
+rule: overcast
+rule: sunny
+rule: hot
+rule: mild
+rule: cool
+rule: cold
+rule: high
+rule: normal
+rule: f
+rule: t
+hola: outlook
+[2K[0G    [31m  1) predecir a partir de una enseñanza simple[0m
 
-[0m  Distances[0m
-[0m    #Euclidea()[0m
-[2K[0G    [32m  ✓[0m[90m Valid [0m
-[0m    #Manhattan()[0m
-[2K[0G    [32m  ✓[0m[90m calculate Manhattan distance correclty [0m
-[0m    #Chebyshev()[0m
-[2K[0G    [32m  ✓[0m[90m calculate the Chebyshev distance correclty [0m
-
-[0m  FastMath[0m
-[0m    #pow()[0m
-[2K[0G    [32m  ✓[0m[90m should be corret [0m
-
-[0m  Point[0m
-[0m    #add()[0m
-[2K[0G    [32m  ✓[0m[90m Adds values [0m
-[2K[0G    [32m  ✓[0m[90m Only accept to add valid numbers [0m
-[0m    #get()[0m
-[2K[0G    [32m  ✓[0m[90m get the second value [0m
-[2K[0G    [32m  ✓[0m[90m get a position that not exist - returns null [0m
-[2K[0G    [32m  ✓[0m[90m get nan as parameter to get function [0m
-[0m    #rem()[0m
-[2K[0G    [32m  ✓[0m[90m remove an element [0m
-[2K[0G    [32m  ✓[0m[90m try to remove passing nan as parameter - have to not affect [0m
-[2K[0G    [32m  ✓[0m[90m try to remove a item out of range - have to not affect [0m
-[0m    #magnitude()[0m
-[2K[0G    [32m  ✓[0m[90m have to return the correct dimention of the point [0m
-[2K[0G    [32m  ✓[0m[90m have to don't add non numerric values [0m
-[0m    #addRange()[0m
-[2K[0G    [32m  ✓[0m[90m have to add values to the previous added [0m
-[0m    #dims()[0m
-[2K[0G    [32m  ✓[0m[90m Should return a deep copy of the current dimension list, but allways different [0m
-[2K[0G    [32m  ✓[0m[90m if remove a item on copy don't affect the dimension list of Point [0m
-[2K[0G    [32m  ✓[0m[90m if add a new dimension on the Point don't affect the copy [0m
-
-[0m  ZeroR[0m
-[0m    #learn[0m
-[2K[0G    [32m  ✓[0m[90m learn with Array with objects [0m
-[2K[0G    [32m  ✓[0m[90m learn with a list of values [0m
-[0m    #classExist[0m
-[2K[0G    [32m  ✓[0m[90m have to exist if it is added [0m
-[0m    #ocurrenceOf[0m
-[2K[0G    [32m  ✓[0m[90m have to give me the occurrence of a class [0m
+[0m  ZeroRule Test[0m
+[2K[0G  [32m  ✓[0m[90m Existe clasificador [0m
+[0m    Aprender y generar clases[0m
+[2K[0G    [32m  ✓[0m[90m Aprende una vez y me da 2 clases [0m
+[0m    Predecir[0m
+[2K[0G    [32m  ✓[0m[90m Predecir yes [0m
 
 
-[92m [0m[32m 29 passing[0m[90m (172ms)[0m
+[92m [0m[32m 4 passing[0m[90m (19ms)[0m
+[31m  1 failing[0m
+
+[0m  1) OneRule Test Aprender y predecir simple predecir a partir de una enseñanza simple:
+[0m[31m     AssertionError: expected 'y' to equal 'n'[0m[90m
+      at Context.<anonymous> (/home/ubuntu/workspace/utest/classifiers/OneRuleTest.js:19:20)
+      at callFn (/home/ubuntu/workspace/node_modules/mocha/lib/runnable.js:266:21)
+      at Test.Runnable.run (/home/ubuntu/workspace/node_modules/mocha/lib/runnable.js:259:7)
+      at Runner.runTest (/home/ubuntu/workspace/node_modules/mocha/lib/runner.js:387:10)
+      at /home/ubuntu/workspace/node_modules/mocha/lib/runner.js:470:12
+      at next (/home/ubuntu/workspace/node_modules/mocha/lib/runner.js:312:14)
+      at /home/ubuntu/workspace/node_modules/mocha/lib/runner.js:322:7
+      at next (/home/ubuntu/workspace/node_modules/mocha/lib/runner.js:257:23)
+      at Object._onImmediate (/home/ubuntu/workspace/node_modules/mocha/lib/runner.js:289:5)
+      at processImmediate [as _immediateCallback] (timers.js:345:15)
+[0m
+
 
