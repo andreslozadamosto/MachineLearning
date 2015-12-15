@@ -2,6 +2,11 @@
  * Clasificador OneR
  * @link http://www.saedsayad.com/oner.htm
  * @link https://www.youtube.com/watch?v=phnkMGDZUNI&index=4&list=PLea0WJq13cnCS4LLMeUuZmTxqsqlhwUoe
+ * @link http://www.csee.wvu.edu/~timm/cs591o/old/BasicMethods.html
+ * @link http://es.slideshare.net/pierluca.lanzi/machine-learning-and-data-mining-12-classification-rules
+ * @link http://www.cs.ccsu.edu/~markov/ccsu_courses/DataMining-7.html
+ * @link http://staffwww.itn.liu.se/~aidvi/courses/06/dm/lectures/lec4.pdf
+ * @link http://www.banglajol.info/index.php/BJSIR/article/view/3668/3021
  * @class OneRule
  */
 exports.OneRule = function() {
