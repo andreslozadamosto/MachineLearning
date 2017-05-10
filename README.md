@@ -19,5 +19,3 @@ Desarrollo actual
 -----------------
 
 Se basa en un desarrollo TDD y actualmente se encuentra implmentado el algoritmo ZeroR y las primeras fórmulas de distancia Euclídea y Manhattan (en desarrollo) para implementar el algoritmo KNN.
-
-
